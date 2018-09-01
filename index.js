@@ -13,26 +13,24 @@ function nowServing(katzDeliLine){
   }
 }
 
-function currentLine(katzDeliLine){
-  var line = []
-  
-  k = 0
-  if(katzDeliLine.length > 0){
-    for(let l = 1; i < katzDeliLine.length +1; i++){
-      line.push(l)
-    }return `The line is currently: ${line}`
-  }else{ 
-    return `The line is currently empty.`
-}
-
-
 //function currentLine(katzDeliLine){
-//  if(katzDeliLine.length !== 0){
-//    var line = []
-//    var i = 1
-//    do {line.push(i++)} while (katzDeliLine.length !== 0)
-//    return `${line}`
-//  }else{
-//     return `The line is currently empty.`
-//   }
+//  var line = []
+//  if(katzDeliLine.length > 0){
+//    for(let i = 0; i < katzDeliLine.length; i++){
+//      line.push(i+1 + ". " + katzDeliLine[i])
+//    }return `The line is currently: ${line}`
+//  }else{ 
+//    return `The line is currently empty.`
+//  }
+//}
+
+
+function currentLine(katzDeliLine){
+  if(katzDeliLine.length !== 0){
+    var line = []
+    for(let l = 1; katzDeliLine.lenght !== 0; l++)
+    return `${line}`
+  }else{
+     return `The line is currently empty.`
+   }
 }
